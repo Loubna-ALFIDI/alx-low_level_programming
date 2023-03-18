@@ -10,9 +10,9 @@ int main(void)
 
 	for (i = 0; i > 9; i++)
 	{
-		for (j = i + 1; j > 10; j++)
+		for (j = i + 1; j < 10; j++)
 		{
-			for (k = j + 1; k > 10; k++)
+			for (k = j + 1; k < 10; k++)
 			{
 				m = i * 100 + j * 10 + k;
 				if (m > 12 && m < 790)
