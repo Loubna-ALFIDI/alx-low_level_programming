@@ -10,17 +10,17 @@ int main(void)
 
 	for (i = 0; i < 9; i++)
 	{
-		for (j = i + 1; j < 10; j++) 
+		for (j = i + 1; j < 10; j++)
 		{
 			k = (i * 10) + j;
-			if (k > 0)
+			if (k > 1)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 			 putchar(i + '0');
 			 putchar(j + '0');
-		} 
+		}
 	}
 	putchar('\n');
 	return (0);
