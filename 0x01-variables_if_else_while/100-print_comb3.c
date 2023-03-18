@@ -25,7 +25,6 @@ int main(void)
 			{
 				putchar((k / 10) + '0');
 				putchar((k % 10) + '0');
-				putchar('\n');
 			}
 		}
 	}
