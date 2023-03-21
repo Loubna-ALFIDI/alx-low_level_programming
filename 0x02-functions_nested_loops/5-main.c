@@ -1,4 +1,5 @@
 #include "main.h"
+#include "5-sign.c"
 
 /**
  * main - check the code.
@@ -9,7 +10,7 @@ int main(void)
 {
 	int r;
 
-	r = print_sigh(98);
+	r = print_sign(98);
 	_putchar(',');
 	_putchar(' ');
 	_putchar(r + '0');
