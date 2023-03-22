@@ -8,11 +8,10 @@ int main(void)
 {
 	int i, sum = 0;
 
-	i = 1;
-	while ((i % 3 == 0 || i % 5 == 0) && i < 1024)
+	for (i = 3; i < 1024 ; i++)
 	{
-		sum += i;
-		i++;
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
 	}
 	printf("%d\n", sum);
 	return (0);
