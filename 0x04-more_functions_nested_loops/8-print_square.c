@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *  *print_square - check the code
- *   *@size:parametre
- *    *Return: Always 0.
- *     */
+ *print_square - check the code
+ *@size:parametre
+ *Return: Always 0.
+ */
 void print_square(int size)
 {
 	int j, i;
