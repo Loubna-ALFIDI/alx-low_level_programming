@@ -4,7 +4,7 @@
  * @str: parametre
  * Return: Always 0.
  */
-void puts_half(charstr)
+void puts_half(char *str)
 {
     	 int j = 0;
      	 int k;
