@@ -4,7 +4,7 @@
  * _strncpy - copies a string
  * @dest: is a parameter
  * @src: is a parameter
- * @i: is a parameter
+ * @n: is a parameter
  * Return: char
  */
 char *_strncpy(char *dest, char *src, int n)
