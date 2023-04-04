@@ -8,17 +8,22 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i = 0, j = 0, k = 0;
+	int i;
+	int j;
+	int found;
 
+	i = 0;
 	while (s[i])
 	{
+		j = 0;
+		found = 0;
 		while (accept[j])
 		{
 			if (s[i] == accept[j])
-				k = 1;
+				found = 1;
 			j++;
 		}
-		if (k == 1)
+		if (found == 1)
 			return (s + i);
 		i++;
 	}
