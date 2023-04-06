@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * void _print_rev_recursion(char *s) - check the code
+ * _print_rev_recursion - check the code
  * @s: parametrr
  * Return: void
  */
@@ -11,4 +11,4 @@ void _print_rev_recursion(char *s)
 		return;
 	_print_rev_recursion(s + 1);
 	_putchar(*s);
-} 
+}
