@@ -5,7 +5,7 @@
  * main - Entry point
  * @argc: int
  * @argv: char*
- * Return : 0
+ * Return: 0
  */
 int main(int argc, char **argv __attribute__((unused)))
 {
