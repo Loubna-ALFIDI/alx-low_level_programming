@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point
  * @argc: int
  * @argv: char*
  * Return : 0
