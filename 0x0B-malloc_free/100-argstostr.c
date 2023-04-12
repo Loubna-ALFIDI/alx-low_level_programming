@@ -28,8 +28,8 @@ int _strlen(char *s)
  *Return: the array created.
  */
 
-c
-ar *_create_array(unsigned int size)
+
+char *_create_array(unsigned int size)
 {
 	char *array;
 
