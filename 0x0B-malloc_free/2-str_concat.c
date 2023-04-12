@@ -15,14 +15,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (!s1)
 		s1 = "";
-	if (!s2)
-		s2 = "";
+
 	while (s1[i] && s2[j])
 	{
 		i++;
 		j++;
 	}
-	p = malloc(i + j + 1);
+	p = malloc(i + j + 2);
 	if (!p)
 		return (NULL);
 	i = 0;
