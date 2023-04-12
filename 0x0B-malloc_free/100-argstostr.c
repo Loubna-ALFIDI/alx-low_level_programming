@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
+/**
  *_strlen - returns the length of a given string
  *@s: the string
  *Return: the length of given string
@@ -40,7 +40,7 @@ char *_create_array(unsigned int size)
 		return (NULL);
 	return (array);
 }
-/*
+/**
  *argstostr - concatenates the arguments to string
  *@ac: the number of arguments
  *@av: the arguments
