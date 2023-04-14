@@ -45,8 +45,8 @@ void _strcpy(char *dest, char *src, unsigned int i)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int l1;
-	int i = 0;
+	unsigned int i = 0;
+	int l1;
 
 	l1 = __strlen(s1);
 	if (!s1)
