@@ -48,11 +48,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0;
 	int l1;
 
-	l1 = __strlen(s1);
 	if (!s1)
 		s1 = "";
 	if (!s2)
 		s2 = "";
+	l1 = __strlen(s1);
 	p = malloc(l1 + n + 1);
 	if (!p)
 		return (NULL);
