@@ -5,19 +5,17 @@
  * @s: the string
  * Return: the length of given string
  */
-
 int __strlen(char *s)
 {
-        int i;
+	int i;
 
-        i = 0;
-        while (s[i])
-        {
-                i++;
-        }
-        return (i);
+	i = 0;
+	while (s[i])
+	{
+		i++;
+	}
+	return (i);
 }
-
 /**
  * _strcpy - copies a string from src to dest
  * @dest: the string to copy to
@@ -25,18 +23,17 @@ int __strlen(char *s)
  * @i: the index to start from
  * Return: dest the string the has src content
  */
-
 void _strcpy(char *dest, char *src, unsigned int i)
 {
-        int j;
+	int j;
 
-        j = 0;
-        while (src[j])
-        {
-                dest[i] = src[j];
-                i++;
-                j++;
-        }
+	j = 0;
+	while (src[j])
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
 }
 /**
  * string_nconcat - concatenates two strings
@@ -44,11 +41,11 @@ void _strcpy(char *dest, char *src, unsigned int i)
  * @s2: char*
  * @n: unsigned int
  * Return: char*
- */
+*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int l1, i;
+	unsigned int l1, i = 0;
 
 	l1 = __strlen(s1);
 	if (!s1)
@@ -60,11 +57,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	_strcpy(p, s1, 0);
 	while (i < n)
-        {
-                p[l1] = s2[i];
-                l1++;
-                i++;
-        }
+	{
+		p[l1] = s2[i];
+		l1++;
+		i++;
+	}
 	p[l1] = '\0';
 	return (p);
 }
