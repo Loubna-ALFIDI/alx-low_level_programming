@@ -17,7 +17,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	l->len = strlen(str);
         l->next = NULL;
 	if (!*head)
+	{
 		*head = l;
+		return (l);
+	}
 	while (current->next)
 	     	current = current->next;
 	current->next = l;
