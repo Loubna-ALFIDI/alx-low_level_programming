@@ -21,7 +21,7 @@ size_t looped_listint(const listint_t *head)
 
 	while (suiv)
 	{
-		if (prev== suiv)
+		if (prev == suiv)
 		{
 			prev = head;
 			while (prev != suiv)
