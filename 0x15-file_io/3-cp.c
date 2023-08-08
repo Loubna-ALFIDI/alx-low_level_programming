@@ -25,6 +25,7 @@ char *create_buffer(char *file)
 /**
  * close_file - Closes file descriptors.
  * @fd: The file descriptor to be closed.
+ * Return: void
  */
 void close_file(int fd)
 {
