@@ -16,5 +16,5 @@ size_t print_dlistint(const dlistint_t *h)
 		currrent = currrent->next;
 		node_count++;
 	}
-	return node_count;
+	return (node_count);
 }
