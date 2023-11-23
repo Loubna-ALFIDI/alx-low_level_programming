@@ -5,8 +5,14 @@ NAME = school
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all : $(NAME)
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $^
+
+-include m.h
+
+$(OBJ): %.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) *~ $(NAME)
@@ -18,3 +24,4 @@ fclean: clean oclean
 
 re: fclean all
 #\!/usr/bin/bash
+
